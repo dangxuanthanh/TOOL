@@ -1,0 +1,36 @@
+.button_menu
+    display: flex
+    justify-content: center
+    padding: 40px 0
+    .btn
+        position: relative
+        width: 50px
+        height: 50px
+        cursor: pointer
+        background-color: #e52165
+        border-radius: 20%
+        &:active
+            background-color: #0d1137
+        &:before, &:after
+            content: ''
+            position: absolute
+            transition: all .3s
+            background-color: #fff
+            height: 8%
+            width: 50%
+            top: 50%
+            left: 50%
+            transform: translate(-50%,-50%)
+        &::before
+            top: 43%
+        &::after
+            top: 57%
+        &.active
+            &:before, &:after
+                top: 47%
+            &:before
+                left: 25%
+                transform: rotate(45deg)
+            &:after
+                left: 25%
+                transform: rotate(-45deg)

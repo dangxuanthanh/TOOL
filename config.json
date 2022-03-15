@@ -1,0 +1,13 @@
+{
+	"font": [
+		"src/fonts/**"
+	],
+	"js": [
+		"bower_components/jquery/view/jquery.min.js",
+		"src/_plugins/mapping.js",
+		"bower_components/lazysizes/lazysizes.js"
+	],
+	"css": [
+		"src/_plugins/"
+	]
+}

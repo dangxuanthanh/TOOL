@@ -1,0 +1,24 @@
+.back_to_top
+    position: fixed
+    width: 50px
+    height: 50px
+    bottom: 30px
+    right: 30px
+    display: none
+    cursor: pointer
+    background-color: #e52165
+    border-radius: 20%
+    transform: scale(0.5)
+    animation: scaleUp 0.3s 1 both
+    @keyframes scaleUp
+        100%
+            transform: scale(1)
+    &:active
+        background-color: #0d1137
+    &.active
+        display: flex
+        align-items: center
+        justify-content: center
+        i
+            font-size: 28px
+            color: #fff

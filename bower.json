@@ -1,0 +1,21 @@
+{
+	"name": "gulp-html",
+	"description": "transpile pug, sass, js(es6) => html, css(w/ added prefix, auto-sorted css, minified), js(babeled, minified)",
+	"main": "gulpfile.babel.js",
+	"authors": [
+		"dangxuanthanh"
+	],
+	"license": "MIT",
+	"homepage": "https://github.com/dangxuanthanh/MySource",
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"test",
+		"tests"
+	],
+	"dependencies": {
+		"jquery": "^3.6.0",
+		"lazysizes": "^5.3.1"
+	}
+}

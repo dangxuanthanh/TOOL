@@ -1,0 +1,65 @@
+section
+	h2
+		text-align: center
+.mobile_wrap
+	position: fixed
+	right: 0
+	bottom: 0
+	height: 100vh
+	background-color: #0d1137
+	width: 50vw
+	display: block
+	transform: translateX(100%)
+	transition: all .6s cubic-bezier(.68,-.55,.265,1.55)
+	z-index: 10
+	overflow-y: auto
+	overflow-x: hidden
+	&.active
+		transform: translateX(0)
+	.menu-list
+		padding: 50px
+		list-style: none
+		li
+			padding: 10px 0
+			a
+				font-size: r(18px)
+				text-transform: uppercase
+				color: #fff
+			&.active, &:hover
+				> a
+					color: #e52165
+
+.tab_wrapper
+	padding: 40px 0
+	.tabs
+		display: flex
+		justify-content: center
+		.tab_link
+			list-style: none
+			padding: 10px 40px
+			color: #0d1137
+			cursor: pointer
+			font-weight: 700
+			transition: all ease 0.3s
+			border-bottom: solid 3px #e52165
+			letter-spacing: 1px
+			&:hover,&.active
+				background-color: #e52165	
+				color: #fff	
+
+	.contents
+		padding: 20px 0
+		display: flex
+		justify-content: center
+		.tab_content
+			display: none
+			text-align: center
+			color: #0d1137
+			transform: translateY(20px)
+			animation: fadeIn 0.3s ease 1 both
+			@keyframes fadeIn
+				100%
+					transform: none
+			&.active
+				display: block
+
